@@ -26,15 +26,13 @@ void main() async {
   await FlutterConfig.loadEnvVariables();
 
   final connected = await checkInternetConnection();
-  if (!connected) {
-    runApp(MyApp2());
-  } else {
+  
     runApp(login == null
         ? MyApp1()
         : login
             ? MyApp()
             : MyApp1());
-  }
+
 }
 
 Future<bool> checkInternetConnection() async {
