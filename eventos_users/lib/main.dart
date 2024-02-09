@@ -46,10 +46,7 @@ void main() async {
               : MyApp1(),
     );
   
-    runApp(
-      // Si il n'y a pas de connexion Internet, affichez l'application MyApp2
-      MyApp2(),
-    );
+  
   
 }
 
