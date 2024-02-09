@@ -35,7 +35,7 @@ void main() async {
 
   final connected = await checkInternetConnection(); //check internet connection
 
-  if (connected) {
+  
     //Si il y a acces à internet
     runApp(
       // Si l'utilisateur est connecté à l'application, affichez l'application MyApp sinon MyApp1
@@ -45,12 +45,12 @@ void main() async {
               ? MyApp()
               : MyApp1(),
     );
-  } else {
+  
     runApp(
       // Si il n'y a pas de connexion Internet, affichez l'application MyApp2
       MyApp2(),
     );
-  }
+  
 }
 
 Future<bool> checkInternetConnection() async {
